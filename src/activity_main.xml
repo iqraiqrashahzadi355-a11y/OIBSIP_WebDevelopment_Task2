@@ -1,0 +1,8 @@
+<LinearLayout ... orientation="vertical">
+    <EditText android:id="@+id/titleInput" hint="Task Title"/>
+    <EditText android:id="@+id/detailsInput" hint="Task Details"/>
+    <EditText android:id="@+id/dateInput" hint="Date (YYYY-MM-DD)"/>
+    <Button android:id="@+id/addBtn" android:text="Add Task"/>
+    <Button android:id="@+id/logoutBtn" android:text="Logout"/>
+    <ListView android:id="@+id/taskList"/>
+</LinearLayout>

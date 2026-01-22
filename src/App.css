@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.App {
+  background: #f0f0f0;
+  min-height: 100vh;
+  padding: 20px;
+  transition: 0.3s;
+}
+.App.dark { background: #121212; color: #fff; }
+
+.container { max-width: 600px; margin: auto; }
+.dark-toggle { margin-bottom: 20px; padding: 5px 10px; cursor: pointer; }
+
+.task-input input,
+.task-input select { padding: 8px; margin-right: 5px; margin-bottom: 10px; }
+.task-input button { padding: 8px 12px; cursor: pointer; }
+
+.filter { margin-bottom: 15px; }
+
+.task-list { display: flex; flex-direction: column; gap: 10px; }
+
+.task-card {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px; border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+.task-card:hover { transform: scale(1.02); }
+
+.task-card.low { border-left: 6px solid #4ade80; }
+.task-card.medium { border-left: 6px solid #fbbf24; }
+.task-card.high { border-left: 6px solid #f87171; }
+
+.task-card button { background: none; border: none; font-size: 16px; margin-left: 5px; cursor: pointer; }
+
+.App.dark .task-card {
+  background: #1e1e1e; box-shadow: 0 3px 6px rgba(255,255,255,0.05);
+}
